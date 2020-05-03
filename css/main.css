@@ -1,0 +1,641 @@
+/* ==========================================================================
+   Homepage
+   ========================================================================== */
+
+/* Global styles
+   ========================================================================== */
+
+/* paytone-one-regular - latin */
+@font-face {
+  font-family: 'Paytone One';
+  font-style: normal;
+src: url('../fonts/paytone-one-v12-latin-regular.woff2') format('woff2');/* Super Modern Browsers */
+     url('../fonts/asap.condensed/paytone-one-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/asap.condensed/paytone-one-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #fff;
+  color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+
+header,
+main,
+footer {
+  padding: 20px;
+}
+
+/* Page header
+   ========================================================================== */
+
+header {
+  align-items: center;
+  background-color: #007cb7;
+  color: #fff;
+  display: flex;
+  height: 100px;
+  margin-left: -20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header > img {
+  height: 50px;
+  width: 394px;
+}
+
+
+/* Page content
+   ========================================================================== */
+
+main {
+  margin: auto;
+  max-width: 1000px;
+  min-height: 500px;
+  position: relative;
+  top: 80px;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  margin-left: -40px;
+}
+
+.homebutton {
+  color: #007cb7;
+  font-size: 1.9rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#introduction {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 20px;
+  text-align: justify;
+}
+
+#main {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 5px;
+  max-width: 960px;
+  padding: 20px;
+  text-align: justify;
+}
+
+#content {
+  margin-bottom: 100px;
+}
+
+section {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 20px;
+  padding: 20px;
+}
+/* Page footer
+   ========================================================================== */
+
+footer {
+  background-color: #373737;
+  margin:0 -20px  -20px;
+  z-index: 1;
+  
+}
+#footer {
+  background-color: #373737;
+  color: #fff;
+  margin-right: 40px;
+  width: 100%;
+}
+
+#footer strong {
+  margin-left: 20px;
+  padding-right: 10px;
+}
+
+/* :hover
+   ========================================================================== */
+[for="first-name"]:hover,
+[for="last-name"]:hover,
+[for="email"]:hover,
+[for="date"]:hover,
+[for="gender"]:hover,
+[for="sexe"]:hover,
+[for="etatcivil"]:hover,
+#etatcivil,
+[for="address"]:hover,
+[for="avsnumber"]:hover,
+[for="programmation"]:hover,
+[for="syteme"]:hover,
+[for="reseau"]:hover,
+[for="support"]:hover,
+[for="chimie"]:hover,
+[for="genieelectrique"]:hover,
+[for="informatique"]:hover,
+[for="telecommunication"]:hover,
+[for="remarque"]:hover,
+#filiere
+{
+  cursor: pointer;
+}
+
+a:hover,
+button:hover {
+  color: #005680;
+}
+
+/* form's page
+   ========================================================================== */
+
+.columns {
+  display: inline-grid;
+  grid-gap: 20px;
+  grid-template-columns: 20% 1fr 20% 1fr;
+}
+
+label {
+  align-self: center;
+  color: #007cb7;
+  font-family: 'Paytone One',sans-serif,Candara;
+  margin: 5px;
+  text-align: right;
+}
+
+.inputsize {
+  align-content: center;
+  border: 1px solid #d6d9dc;
+  border-left: 4px solid #721c24;
+  border-radius: 5px;
+  height: 30px;
+  width: 1fr;
+}
+
+.sexecolor {
+  color: #000;
+}
+
+.adresseinput {
+  border: 1px solid #d6d9dc;
+  border-left: 4px solid #721c24;
+  border-radius: 5px;
+  height: 30px;
+  width: 100%;
+}
+
+.codepostale {
+  border: 1px solid #d6d9dc;
+  border-left: 4px solid #721c24;
+  border-radius: 5px;
+  float: left;
+  height: 30px;
+  margin: 5px 0 0 0;
+  width: 30%;
+}
+
+.ville {
+  border: 1px solid #d6d9dc;
+  border-left: 4px solid #721c24;
+  border-radius: 5px;
+  float: right;
+  height: 30px;
+  margin: 5px 0 0 6px;
+  width: 65%;
+}
+
+#avsnumber {
+  margin: 15px 0 0 0;
+}
+
+.remarque {
+  border: 1px solid #d6d9dc;
+  border-radius: 5px;
+  grid-column: 2/5;
+  height: 200px;
+}
+
+button {
+  align-items: center;
+  background-color: #007cb7;
+  border: 2px solid #000;
+  color: #fff;
+  font-size: 1.8rem;
+  grid-column: 1/5;
+  height: 40px;
+  justify-self: center;
+  margin: 30px;
+  width: 150px;
+}
+
+.button {
+  text-align: center;
+}
+
+input:valid {
+  border-left: 4px solid #155724;
+}
+
+select:valid {
+  border-left: 4px solid #155724;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("../../img/icon-arrow-down.svg") right / 25px 25px no-repeat;
+}
+
+@media screen and (max-width: 975px) {
+  .columns {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  label {
+    text-align: left;
+  }
+  
+  #first-name {
+    grid-column: 1;
+    grid-row: 2 ;
+  }
+  
+  #last-name {
+    grid-column: 2;
+    grid-row: 2 ;
+  }
+  
+  [for=email] {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  [for="date"] {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  
+  #email {
+    grid-column: 1;
+    grid-row:4;
+  }
+  
+  #date {
+    grid-column: 2;
+    grid-row:4;
+  }
+  
+  #sexe_radio {
+    grid-column: 1;
+    grid-row: 5 ;
+  }
+  
+  .radio_sexe {
+    grid-column: 1;
+    grid-row: 6 ;
+  }
+  
+  [for="etatcivil"] {
+    grid-column: 2;
+    grid-row: 5;
+  }
+  
+  #etatcivil {
+    grid-column: 2;
+    grid-row: 6;
+  }
+  
+  [for="address"] {
+    grid-column: 1;
+    grid-row: 7;
+  }
+  
+  .test {
+    grid-column: 1;
+    grid-row: 8;
+  }
+  
+  [for="avsnumber"] {
+    grid-column: 2;
+    grid-row: 7;
+  }
+  
+  #avsnumber {
+    grid-column: 2;
+    grid-row: 8;
+  }
+  
+  [for="checkbox"] {
+    grid-column: 1;
+    grid-row: 9;
+  }
+  
+  #checkbox {
+    grid-column:1;
+    grid-row: 10;
+  }
+  
+  [for="filiere"] {
+    grid-column: 2;
+    grid-row: 9;
+  }
+  
+  #filiere {
+    grid-column: 2;
+    grid-row: 10;
+  }
+  
+  [for="remarque"] {
+    grid-column: 1;
+    grid-row: 11;
+  }
+  
+  #remarque {
+    grid-column: 1/5;
+    grid-row: 12;
+  }
+  
+}
+
+/* ==========================================================================
+   Small screen
+   ========================================================================== */
+
+@media screen and (max-width: 590px) {
+  .columns {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+  }
+  
+  label {
+    text-align: left;
+  }
+  
+  #first-name {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  [for="last-name"] {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #last-name {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  [for=email] {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  #email {
+    grid-column: 2;
+    grid-row:3;
+  }
+  
+  [for="date"] {
+    grid-column: 1;
+    grid-row:4;
+  }
+  
+  #date {
+    grid-column: 2;
+    grid-row:4;
+  }
+  
+  #sexe_radio {
+    grid-column: 1;
+    grid-row: 5 ;
+  }
+  
+  .radio_sexe {
+    grid-column: 2;
+    grid-row: 5 ;
+  }
+  
+  [for="etatcivil"] {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  
+  #etatcivil {
+    grid-column: 2;
+    grid-row: 6;
+  }
+  
+  [for="address"] {
+    grid-column: 1;
+    grid-row: 7;
+  }
+  
+  .test {
+    grid-column: 2;
+    grid-row: 7;
+  }
+  
+  [for="avsnumber"] {
+    grid-column: 1;
+    grid-row: 8;
+  }
+  
+  #avsnumber {
+    grid-column: 2;
+    grid-row: 8;
+  }
+  
+  [for="checkbox"] {
+    grid-column: 1;
+    grid-row: 9;
+  }
+  
+  #checkbox {
+    grid-column:2;
+    grid-row: 9;
+  }
+  
+  [for="filiere"] {
+    grid-column: 1;
+    grid-row: 10;
+  }
+  
+  #filiere {
+    grid-column: 2;
+    grid-row: 10;
+  }
+  
+  [for="remarque"] {
+    grid-column: 1;
+    grid-row: 11;
+  }
+  
+  #remarque {
+    grid-column: 1/3;
+    grid-row: 12;
+  }
+  body {
+    width:510px;
+  }
+}
+
+@media screen and (max-width: 435px){
+  .columns {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    margin: auto;
+  }
+  
+  label {
+    text-align: left;
+  }
+  
+  #first-name {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  [for="last-name"] {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  #last-name {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  [for=email] {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  #email {
+    grid-column: 1;
+    grid-row:6;
+  }
+  
+  [for="date"] {
+    grid-column: 1;
+    grid-row:7;
+  }
+  
+  #date {
+    grid-column: 1;
+    grid-row:8;
+  }
+  
+  #sexe_radio {
+    grid-column: 1;
+    grid-row: 9 ;
+  }
+  
+  .radio_sexe {
+    grid-column: 1;
+    grid-row: 10 ;
+  }
+  
+  [for="etatcivil"] {
+    grid-column: 1;
+    grid-row: 11;
+  }
+  
+  #etatcivil {
+    grid-column: 1;
+    grid-row: 12;
+  }
+  
+  [for="address"] {
+    grid-column: 1;
+    grid-row: 13;
+  }
+  
+  .test {
+    grid-column: 1;
+    grid-row: 14;
+  }
+  
+  [for="avsnumber"] {
+    grid-column: 1;
+    grid-row: 15;
+  }
+  
+  #avsnumber {
+    grid-column: 1;
+    grid-row: 16;
+  }
+  
+  [for="checkbox"] {
+    grid-column: 1;
+    grid-row: 17;
+  }
+  
+  #checkbox {
+    grid-column:1;
+    grid-row: 18;
+  }
+  
+  [for="filiere"] {
+    grid-column: 1;
+    grid-row: 19;
+  }
+  
+  #filiere {
+    grid-column: 1;
+    grid-row: 20;
+  }
+  
+  [for="remarque"] {
+    grid-column: 1;
+    grid-row: 21;
+  }
+  
+  #remarque {
+    grid-column: 1/3;
+    grid-row: 22;
+  }
+  body {
+    height: auto;
+    width:440px;
+  }
+}
